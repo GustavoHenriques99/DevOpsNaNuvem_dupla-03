@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 
 # ===== VARIAÇÃO DA DUPLA (mude estes valores) =====
 NOME_DUPLA = "dupla-03"
-MENSAGEM = "Olá da dupla 03"
+MENSAGEM = "Olá da dupla 03 - v2"
 PORTA = 50072
 # ==================================================
 
