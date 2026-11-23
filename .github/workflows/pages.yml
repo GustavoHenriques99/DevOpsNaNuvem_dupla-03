@@ -1,4 +1,3 @@
-
 name: Publicar site com status
 
 on:
@@ -18,11 +17,9 @@ concurrency:
 jobs:
   publicar:
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
-
     steps:
       - uses: actions/checkout@v4
 
@@ -39,8 +36,11 @@ jobs:
         run: |
           cat > site/status.html <<EOF
           <!doctype html>
-          <html lang="pt-BR"><head><meta charset="utf-8">
-          <title>Status</title></head>
+          <html lang="pt-BR">
+          <head>
+            <meta charset="utf-8">
+            <title>Status</title>
+          </head>
           <body>
           <h1>Status da aplicação</h1>
           <ul>
